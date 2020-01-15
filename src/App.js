@@ -6,14 +6,14 @@ import { Home, About, Contact, Navigation } from './components';
 const App = () => (
    <div>
       <Navigation />
-      <Route path= '/' exact >
-         <Home />
+      <Route path= '/' exact component= {Home}>
+         {/* <Home /> */}
       </Route>
-      <Route path= '/about' >
-         <About />
+      <Route path= '/about' component= {About}>
+         {/* <About /> */}
       </Route>
-      <Route path= '/contact' >
-         <Contact />
+      <Route path= '/contact' component= {Contact}>
+         {/* <Contact /> */}
       </Route>
    </div>
 );
